@@ -1,0 +1,15 @@
+server:
+  port: 8080 # 端口号
+  servlet:
+    context-path: /boot # 项目根路径
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver # 以前的已经过时了，控制台会提醒
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml  # 如果mapper前加/，表示是在项目目录下，那就找不到mapper文件
+  type-aliases-package: com.example.bootstudy.entity # 老老实实包名
+  configuration:
+    map-underscore-to-camel-case: true
