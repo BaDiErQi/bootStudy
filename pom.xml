@@ -70,6 +70,13 @@
             <artifactId>spring-boot-starter-redis</artifactId>
             <version>1.4.7.RELEASE</version>
         </dependency>
+
+        <!--响应内容 xml/json格式互转-->
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-xml</artifactId>
+            <version>2.9.7</version>
+        </dependency>
     </dependencies>
 
     <build>
