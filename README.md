@@ -75,7 +75,7 @@ cron表达式生成：http://cron.qqe2.com/
 * 编写配置类，apiInfo信息，注册Docket实例
 * 配置类上添加@EnableSwagger2启动注解
 * 在实体类上配置@ApiModel/@ApiModelProperty注解
-*
+* 在接口上配置 @ApiOperation/@ApiParam，貌似 @ApiImplicitParam 配置在方法上UI页面不能显示入参类型
 * 访问路径：http://localhost:8080/boot/swagger-ui.html 
 
 参考：https://blog.csdn.net/forezp/article/details/71023536
