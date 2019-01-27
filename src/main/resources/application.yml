@@ -22,3 +22,7 @@ mybatis:
   type-aliases-package: com.example.bootstudy.entity # 老老实实包名
   configuration:
     map-underscore-to-camel-case: true
+properties:
+  ########### 测试@ConfigurationProperties
+  name: 你好
+  age: 11

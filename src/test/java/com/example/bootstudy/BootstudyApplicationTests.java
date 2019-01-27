@@ -1,6 +1,7 @@
 package com.example.bootstudy;
 
 import com.example.bootstudy.dao.RedisDao;
+import com.example.bootstudy.entity.PropertyEntity;
 import com.example.bootstudy.entity.User;
 import com.example.bootstudy.service.UserService;
 import org.junit.Test;
@@ -43,6 +44,18 @@ public class BootstudyApplicationTests {
         redisDao.setKey("name","feng");
         String value = redisDao.getValue("name");
         System.out.println(value);
+    }
+
+
+    @Autowired
+    private PropertyEntity propertyEntity;
+
+    /**
+     * 测试 @ConfigurationProperties 注解
+     */
+    @Test
+    public void test4() {
+        System.out.println(propertyEntity);
     }
 }
 

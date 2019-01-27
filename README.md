@@ -80,4 +80,25 @@ cron表达式生成：http://cron.qqe2.com/
 
 参考：https://blog.csdn.net/forezp/article/details/71023536
 
-https://www.jianshu.com/p/85df3247660d
+有注解说明：https://www.jianshu.com/p/85df3247660d
+
+## 日志log4j
+> 配置名要是 log4j.properties
+
+参考：https://blog.csdn.net/l1028386804/article/details/80464909
+日志的基本概念：https://www.cnblogs.com/bigben0123/p/7895696.html
+
+## Actuator监控
+> 引启动包 spring-boot-starter-actuator
+
+* 2.0版本后，访问不同端口前，要加/actuator
+* 比如：http://localhost:8080/boot/actuator/info
+
+参考：https://docs.spring.io/spring-boot/docs/2.1.2.RELEASE/reference/htmlsingle/#production-ready
+
+## @ConfigurationProperties
+> 加载属性到实体类上
+
+* 实体类上添加 @ConfigurationProperties注解，配置好prefix属性
+* 实体类需要注册到工厂(@Component)
+* 实体类要有getter/setter方法
