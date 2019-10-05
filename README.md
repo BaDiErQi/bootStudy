@@ -50,7 +50,8 @@ pom文件需要导入maven-plugin插件，构建后jar包可以直接运行
 @NoArgsConstructor/@RequiredArgsConstructor/@AllArgsConstructor 
 自动生成构造方法
 
-参考：https://www.jianshu.com/p/df3705c54188
+参考：https://www.jianshu.com/p/df3705c54188  
+https://blog.csdn.net/u013225178/article/details/80721799
 
 ## 开启定时任务
 > springboot中已集成
